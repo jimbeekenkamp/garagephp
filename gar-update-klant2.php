@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-update-klant2.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage update klant 2</h1>
-<p>Dit formulier wordt gebruikt om klantgegevens te wijzigen in de tabel klant van de database garage.</p>
+<h1>Klant updaten</h1>
+<!--<p>Dit formulier wordt gebruikt om klantgegevens te wijzigen in de tabel klant van de database garage.</p>-->
 <?php
 //klantid uit het formulier halen
 $klantid = $_POST["klantidvak"];
@@ -19,7 +20,7 @@ $klanten = $conn->prepare("SELECT klantid, klantnaam, klantadres, klantpostcode,
 $klanten->execute(["klantid" => $klantid]);
 
 //klantgegevens in een nieuw formulier laten zien
-echo "<form action='gar-update-klant3.php' method='post'>";
+echo "<div class='form'><form action='gar-update-klant3.php' method='post'>";
 foreach ($klanten as $klant){
     //klantid mag niet gewijzigd worden
     echo "klantid:" . $klant["klantid"];
@@ -48,7 +49,7 @@ foreach ($klanten as $klant){
 
 }
 echo "<input type='submit'>";
-echo "</form>";
+echo "</form></div>";
 ?>
 
 </body>

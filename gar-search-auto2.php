@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-zoek-auto2.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage zoek auto op klantid 2</h1>
-<p>Op klantid gegevens zoeken uit de tabel auto van de database garage.</p>
+<h1>Auto zoeken</h1>
+<!--<p>Op klantid gegevens zoeken uit de tabel auto van de database garage.</p>-->
 <?php
 //klantid uit het formulier halen
 $autokenteken = $_POST["autokentekenvak"];
@@ -20,6 +21,13 @@ $sql->execute(["autokenteken" => $autokenteken]);
 
 //autogegevens laten zien
 echo "<table>";
+echo "<tr>";
+echo "<th>" . "Kenteken" . "</th>";
+echo "<th>" . "Merk" . "</th>";
+echo "<th>" . "Type" . "</th>";
+echo "<th>" . "Kilometerstand" . "</th>";
+echo "<th>" . "KlantID" . "</th>";
+echo "</tr>";
 foreach ($sql as $rij){
     echo "<tr>";
     echo "<td>" . $rij["autokenteken"] . "</td>";

@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-delete-auto2.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage delete auto 2</h1>
-<p>Op kenteken gegevens zoeken uit de tabel auto van de database garage zodat ze verwijderd kunnen worden.</p>
+<h1>Auto verwijderen</h1>
+<!--<p>Op kenteken gegevens zoeken uit de tabel auto van de database garage zodat ze verwijderd kunnen worden.</p>-->
 <?php
 // klantid uit het formulier halen
 $autokenteken = $_POST["autokentekenvak"];
@@ -20,6 +21,13 @@ $klanten->execute(["autokenteken" => $autokenteken]);
 
 //autogegevens laten zien
 echo "<table>";
+echo "<tr>";
+echo "<th>" . "Kenteken" . "</th>";
+echo "<th>" . "Merk" . "</th>";
+echo "<th>" . "Type" . "</th>";
+echo "<th>" . "Kilometerstand" . "</th>";
+echo "<th>" . "KlantID" . "</th>";
+echo "</tr>";
 foreach ($klanten as $klant){
     echo "<tr>";
     echo "<td>" . $klant["autokenteken"] . "</td>";
@@ -39,7 +47,7 @@ echo "<input type='hidden' name='verwijdervak' value='0'>";
 echo "<input type='checkbox' name='verwijdervak' value='1'>";
 echo "Verwijder deze auto.<br>";
 echo "<input type='submit'>";
-echo "</form>"
+echo "</form>";
 ?>
 
 </body>

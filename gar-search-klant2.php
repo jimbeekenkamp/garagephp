@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-zoek-klant2.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage zoek op klantid 2</h1>
-<p>Op klantid gegevens zoeken uit de tabel klanten van de database garage.</p>
+<h1>Klant zoeken</h1>
+<!--<p>Op klantid gegevens zoeken uit de tabel klanten van de database garage.</p>-->
 <?php
 //klantid uit het formulier halen
 $klantid = $_POST["klantidvak"];
@@ -20,6 +21,13 @@ $sql->execute(["klantid" => $klantid]);
 
 //klantgegevens laten zien
 echo "<table>";
+echo "<tr>";
+echo "<th>" . "KlantID" . "</th>";
+echo "<th>" . "Naam" . "</th>";
+echo "<th>" . "Adres" . "</th>";
+echo "<th>" . "Postcode" . "</th>";
+echo "<th>" . "Plaats" . "</th>";
+echo "</tr>";
 foreach ($sql as $rij){
     echo "<tr>";
     echo "<td>" . $rij["klantid"] . "</td>";

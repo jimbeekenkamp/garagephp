@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-delete-klant3.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>garage delete klant 3</h1>
-<p>Op klantid gegevens zoeken uit de tabel klanten van de database garage zodat ze verwijderd kunnen worden.</p>
+<!--<p>Op klantid gegevens zoeken uit de tabel klanten van de database garage zodat ze verwijderd kunnen worden.</p>-->
 <?php
 // gegevens uit het formulier halen
 $klantid = $_POST["klantidvak"];

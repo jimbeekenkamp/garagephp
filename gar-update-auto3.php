@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-update-auto3.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage update auto 3</h1>
-<p>Autogegevens wijzigen in de tabel auto van de database garage.</p>
+<h1>Auto updaten</h1>
+<!--<p>Autogegevens wijzigen in de tabel auto van de database garage.</p>-->
 <?php
 //auttogegevens uit de formulier halen
 $autokenteken = $_POST["autokentekenvak"];

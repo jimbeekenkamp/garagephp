@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-delete-auto3.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage delete auto 3</h1>
-<p>Op kenteken gegevens zoeken uit de tabel auto van de database garage zodat ze verwijderd kunnen worden.</p>
+<h1>Auto verwijderen</h1>
+<!--<p>Op kenteken gegevens zoeken uit de tabel auto van de database garage zodat ze verwijderd kunnen worden.</p>-->
 <?php
 // gegevens uit het formulier halen
 $autokenteken = $_POST["autokentekenvak"];

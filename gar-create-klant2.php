@@ -4,12 +4,13 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-create-klant2.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage create klant 2</h1>
-<p>
-    Een klant toevoegen aan de tabel klant in de database garage.
-</p>
+<h1>Klant aanmaken</h1>
+<!--<p>-->
+<!--    Een klant toevoegen aan de tabel klant in de database garage.-->
+<!--</p>-->
 
 <?php
 //klantgegevens uit de formulier halen

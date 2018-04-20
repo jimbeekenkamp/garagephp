@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-update-auto2.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage update auto 2</h1>
-<p>Dit formulier wordt gebruikt om autogegevens te wijzigen in de tabel auto van de database garage.</p>
+<h1>Auto updaten</h1>
+<!--<p>Dit formulier wordt gebruikt om autogegevens te wijzigen in de tabel auto van de database garage.</p>-->
 <?php
 //klantid uit het formulier halen
 $autokenteken = $_POST["autokentekenvak"];
@@ -20,7 +21,7 @@ $klanten->execute(["autokenteken" => $autokenteken]);
 $klant = $klanten->fetch(PDO::FETCH_ASSOC);
 
 //autogegevens in een nieuw formulier laten zien
-echo "<form action='gar-update-auto3.php' method='post'>";
+echo "<div class='form'><form action='gar-update-auto3.php' method='post'>";
     //klantid mag niet gewijzigd worden
 
 //    echo "klantid:" . $klant["klantid"];
@@ -59,7 +60,7 @@ echo "<form action='gar-update-auto3.php' method='post'>";
 
 
 echo "<input type='submit'>";
-echo "</form>";
+echo "</form></div>";
 ?>
 
 </body>

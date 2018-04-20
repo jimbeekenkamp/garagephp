@@ -4,11 +4,16 @@ body{
     /*background-image: url("pictures/autogarage-zeewolde-2.jpg");*/
     /*background-size: cover;*/
     /*background-color: orange;*/
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
 table {
     border-collapse: collapse;
     width: 50%;
+    margin-left: 25%;
+    margin-top: 3%;
 }
 
 th, td {
@@ -40,7 +45,7 @@ th {
 
 h1{
     text-align: center;
-    background-color: green;
+    background-color: gray;
     margin: 0 auto;
     padding: 1%;
 }
@@ -48,10 +53,9 @@ h1{
 .klant{
     float: left;
     margin-top: 5%;
-    background-color: green;
+    background-color: gray;
     border-radius: 20px;
     padding: 2%;
-    border: 3px solid black;
     text-align: center;
     width: 40%;
     margin-left: 28%;
@@ -60,24 +64,29 @@ h1{
 .auto{
     float: left;
     margin-top: 5%;
-    background-color: green;
+    background-color: gray;
     border-radius: 20px;
     padding: 2%;
-    border: 3px solid black;
     text-align: center;
     width: 40%;
     margin-left: 28%;
 }
 
 a{
-    background-color: greenyellow;
+    background-color: dimgray;
     text-decoration: none;
     display: inline-block;
     border-radius: 2px;
     margin-top: 2%;
-    color: black;
+    color: white;
     font-size: 25px;
+    padding: 3px;
 
+}
+
+a:hover{
+    color: white;
+    background-color: black;
 }
 
 li{
@@ -87,7 +96,7 @@ li{
 
 ul{
     list-style-type: none;
-    padding-left: 2%;
+    padding-left: 1%;
 }
 
 input[type=text], select {
@@ -101,8 +110,8 @@ input[type=text], select {
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
+    width: 50%;
+    background-color: gray;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -112,21 +121,24 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: dimgray;
+    color: white;
 }
 
-.table {
+.form{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     width: 50%;
     margin: auto;
+    text-align: left;
+    margin-top: 3%;
 }
 
 footer{
     width: 100%;
     height: 10%;
-    background-color: green;
+    background-color: gray;
     position: absolute;
     bottom: 0;
     text-align: center;

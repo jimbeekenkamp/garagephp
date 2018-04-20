@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage read auto</h1>
-<p>Dit zijn alle gegevens uit de tabel auto van de database garage.</p>
+<h1>Alle auto's</h1>
+<!--<p>Dit zijn alle gegevens uit de tabel auto van de database garage.</p>-->
 
 <?php
 //tabel uitlezen en netjes afdrukken

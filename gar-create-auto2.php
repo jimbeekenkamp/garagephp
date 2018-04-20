@@ -4,12 +4,13 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-create-auto2.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage create auto 2</h1>
-<p>
-    Een auto toevoegen aan de tabel auto in de database garage.
-</p>
+<h1>Auto aanmaken</h1>
+<!--<p>-->
+<!--    Een auto toevoegen aan de tabel auto in de database garage.-->
+<!--</p>-->
 
 <?php
 //autogegevens uit de formulier halen

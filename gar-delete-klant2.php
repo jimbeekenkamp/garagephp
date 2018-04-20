@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-delete-klant2.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>garage delet klant 2</h1>
-<p>Op klantid gegevens zoeken uit de tabel klanten van de database garage zodat ze verwijderd kunnen worden.</p>
+<!--<p>Op klantid gegevens zoeken uit de tabel klanten van de database garage zodat ze verwijderd kunnen worden.</p>-->
 <?php
 // klantid uit het formulier halen
 $klantid = $_POST["klantidvak"];
@@ -20,6 +21,13 @@ $klanten->execute(["klantid" => $klantid]);
 
 //klantgegevens laten zien
 echo "<table>";
+echo "<tr>";
+echo "<th>" . "KlantID" . "</th>";
+echo "<th>" . "Naam" . "</th>";
+echo "<th>" . "Adres" . "</th>";
+echo "<th>" . "Postcode" . "</th>";
+echo "<th>" . "Plaats" . "</th>";
+echo "</tr>";
 foreach ($klanten as $klant){
     echo "<tr>";
     echo "<td>" . $klant["klantid"] . "</td>";

@@ -4,10 +4,11 @@
     <meta name="author" content="Jim Beekenkamp">
     <meta charset="UTF-8">
     <title>gar-update-klant3.php</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>garage update klant 3</h1>
-<p>Klantgegevens wijzigen in de tabel klant van de database garage.</p>
+<h1>Klant updaten</h1>
+<!--<p>Klantgegevens wijzigen in de tabel klant van de database garage.</p>-->
 <?php
 //klantgegevens uit de formulier halen
 $klantid = $_POST["klantidvak"];
