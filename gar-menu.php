@@ -30,6 +30,10 @@
     </ul>
 </div>
 
+<footer>
+    <a href="http://www.github.com/jimbeekenkamp/garagephp">Github</a>
+</footer>
+
 
 </body>
 </html>
